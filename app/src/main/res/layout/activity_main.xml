@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Kuis Pemrograman Mobile"
+        android:textColor="@color/grey_100"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+    android:id="@+id/biodata"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Biodata"
+    android:onClick="ClickBiodata"
+    android:textColor="@color/red"
+    android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:id="@+id/menuButton"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            app:icon="@drawable/ic_home"
+            android:backgroundTint="@color/grey"
+            android:onClick="clickMap"
+            app:iconGravity="textStart"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/grey"
+            android:onClick="clickPhone"
+            app:icon="@drawable/ic_phone"
+            app:iconGravity="textStart"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/grey"
+        app:icon="@drawable/ic_power"
+        app:iconGravity="textStart"
+        android:onClick="clickPower"/>
+
+
+
+</LinearLayout>
